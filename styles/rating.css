@@ -1,0 +1,121 @@
+.rating {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 410px;
+  max-height: 410px;
+  background-color: var(--color-dark-blue);
+  border-radius: 25px;
+  box-shadow: 0 0 15px 1px hsl(216, 20%, 3%);
+  padding: 35px;
+}
+
+.rating__state {
+  display: none;
+  height: 100%;
+}
+
+.rating__state--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating__picture-wrapper {
+  margin-top: 10px;
+  max-height: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.rating__picture {
+  width: auto;
+  height: 100%;
+}
+
+.rating__result {
+  display: flex;
+  justify-content: center;
+}
+
+.rating__result-inner {
+  color: var(--color-primary);
+  background-color: hsl(213, 19%, 17%);
+  box-shadow: 0 0 15px 1px rgb(18 27 37 / 40%);
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.rating__title {
+  color: #fff;
+  font-size: 27px;
+}
+
+.rating__title--center {
+  text-align: center;
+}
+
+.rating__description {
+  color: var(--color-light-grey);
+  line-height: 1.5em;
+}
+
+.rating__description--center {
+  text-align: center;
+}
+
+.rating__bullets-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__bullet {
+  font-weight: 700;
+  background-color: hsl(213, 19%, 20%);
+  color: var(--color-light-grey);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px 1px rgb(18 27 37 / 40%);
+  cursor: pointer;
+  user-select: none;
+  transition: all .2s ease-in-out;
+}
+
+.rating__bullet:hover {
+  background-color: var(--color-medium-grey);
+  color: #fff;
+}
+
+.rating__bullet:active,
+.rating__bullet--selected {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.rating__button {
+  font-size: 16px;
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.rating__button:hover {
+  background-color: hsl(25, 97%, 57%);
+}
+
+.rating__button:active {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+.rating__button:disabled {
+  background-color: hsl(213, 19%, 20%);
+}

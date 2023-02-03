@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-medium-grey: hsl(216, 12%, 54%);
+  --color-dark-blue: hsl(213, 19%, 14%);
+  --color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--color-very-dark-blue);
+  font-family: "Overpass";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.button {
+  font-family: "Overpass";
+  letter-spacing: 0.05rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 13px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
