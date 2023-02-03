@@ -119,3 +119,13 @@
 .rating__button:disabled {
   background-color: hsl(213, 19%, 20%);
 }
+
+@media (max-width: 560px) {
+  .rating {
+    max-width: 330px;
+  }
+  .rating__bullet {
+    width: 40px;
+    height: 40px;
+  }
+}
